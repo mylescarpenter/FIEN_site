@@ -1,5 +1,5 @@
 :root {
-  --main-block-height: 400px;
+  --main-block-height: 650px;
 }
 
 html {
@@ -11,8 +11,33 @@ html {
 
 body {
 
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Poppins', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+  font-style: normal;
   margin: 0px;
+  display: grid;
+}
+
+body img {
+  max-width: 100%;
+}
+
+.navbar {
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: 100px;
+  grid-template-areas: 
+    "logo ."
+    "links links";
+}
+
+.navbar .logo{
+  grid-area: logo;
+}
+
+.navbar #links{
+  grid-area: links;
 }
 
 #main-content {
@@ -31,9 +56,6 @@ body {
   background-position: center;
 }
 
-#mission-block p {
-
-}
 
 .initiative-block {
   grid-row: 1;
@@ -44,11 +66,13 @@ body {
   margin-top: 1em;
 }
 
-
-
 .initiative-block div {
   margin: 0 1em 0 1em;
+  order: 1;
+}
 
+.initiative-block img {
+  order: 2;
 }
 
 
