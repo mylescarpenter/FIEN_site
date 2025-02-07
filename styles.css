@@ -95,7 +95,6 @@ body img {
   
   .navbar .pre-links {
     display: auto;
-
   }
 
   .nav-links {
@@ -104,11 +103,12 @@ body img {
     display: flex;
     flex-flow: row nowrap;
     justify-content: end;
+    align-items: center;
     column-gap: 1em;
   }
 
   .nav-links a {
-    padding: 0;
+    padding: 0 .5em 0 .5em;
   }
 
   .navbar .menu-icon {
