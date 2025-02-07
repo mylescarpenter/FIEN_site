@@ -70,13 +70,20 @@ body img {
 
   flex-flow: column nowrap;
   justify-content: left;
+  align-items: stretch;
+  row-gap: 1em;
+  margin: 1em;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: blue;
-  background-color: gray;
+  color: black;
+  background-color: lightgrey;
   font-weight: 400;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 0 0 0 1em;
+  font-size: 1.5em;
 }
 
 .nav-links a:hover {
