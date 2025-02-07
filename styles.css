@@ -112,6 +112,10 @@ body img {
   
 }
 
+.initiatives-content h1{
+  padding: 0 .5em 0 .5em;
+  text-align: center;
+}
 
 .initiative-block {
   grid-row: 1;
