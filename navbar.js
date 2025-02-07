@@ -1,3 +1,5 @@
+const button = document.querySelector(".menu-icon");
+
 function dropdown() {
   const nav_links = document.querySelector(".nav-links");
   const navbar = document.querySelector(".navbar");
@@ -16,3 +18,5 @@ function dropdown() {
     navbar.style.height = "100vh"
   }
 }
+
+button.addEventListener("click", dropdown);
