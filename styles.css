@@ -99,9 +99,16 @@ body img {
   }
 
   .nav-links {
-    display: flex;
+    flex-grow: 1;
 
+    display: flex;
     flex-flow: row nowrap;
+    justify-content: end;
+    column-gap: 1em;
+  }
+
+  .nav-links a {
+    padding: 0;
   }
 
   .navbar .menu-icon {
@@ -157,27 +164,37 @@ body img {
   box-shadow: 2px 4px 5px 2px rgba(0, 0, 0, 0.05);
 }
 
-@media all and (width >= 760px) {
-  .initiative-block {
-    justify-content: space-between;
-    align-content: stretch;
-  }
-}
-
 .initiative-block div {
   margin: 0 1em 0 1em;
   order: 1;
   max-width: 40%;
+  min-width: 300px;
 }
 
 .initiative-block img {
   order: 2;
   max-width: 40%;
   min-width: 300px;
+
+  border: 2px solid lightgrey;
+  border-radius: 10px;
+  margin-bottom: 1em;
 }
 
 .team-content h2 {
   text-align: center;
+}
+
+@media all and (width >= 760px) {
+  .initiative-block {
+    justify-content: space-between;
+    align-content: stretch;
+  }
+
+  .initiative-block img {
+    border-radius: 0 9px 9px 0;
+    margin: 0;
+  }
 }
 
 .team-frames {
