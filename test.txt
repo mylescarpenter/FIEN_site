@@ -1,1 +1,2 @@
-Ensuring proper git connectivity
+Ensuring proper git connectivity.
+Ensuring git functionality. 
