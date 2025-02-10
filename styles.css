@@ -40,12 +40,14 @@ body img {
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
+  column-gap: 2em;
 
   padding: 10px 10px 0 10px;
 }
 
 .navbar .logo {
   /* margin: 10px 0px 0 10px; */
+  width: 100px;
 }
 
 .navbar .menu-icon {
@@ -86,15 +88,14 @@ body img {
   font-size: 1.5em;
 }
 
-@media all and (width > 760px) {
-  
-  .navbar {
-    display: flex;
+@media all and (width > 878px) {
+
+  body img {
+    max-width: 75%;
   }
 
-  
-  .navbar .pre-links {
-    display: auto;
+  .navbar {
+    display: flex;
   }
 
   .nav-links {
@@ -116,23 +117,124 @@ body img {
   }
 }
 
-#mission-block{
-  color: blue;
-
+.mission-block{
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   margin: 0;
 }
 
-#mission-block img {
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+.mission-block p {
+  display: none;
 }
 
-#mission-block p {
-  
+.mission-block img {
+  min-width: 300px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+
+  align-self: center;
+}
+
+.strategy-block {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 2em;
+
+  padding: 0 1em 0 1em;
+  background-color: #1EB53A;
+}
+
+.strategy-block img {
+  display: none;
+  border: 2px solid lightgrey;
+  border-radius: 10px;
+  min-width: 300px;
+}
+
+.founders-block {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 1em;
+  padding: 0 1em 0 1em;
+  background-color: #FCD116;
+}
+
+.founders-block h2 {
+  text-align: center;
+}
+
+.founders-block .founder-cards {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2em;
+}
+
+.founders-block .founder-card{
+  display: flex;
+  flex-flow: column nowrap;
+
+  border: 2px solid lightgrey;
+  border-radius: 10px;
+
+  background-color: white;
+}
+
+.founders-block .founder-card img {
+  max-width: 300px;
+  border-radius: 8px 8px 0 0;
+}
+
+.outreach-block {
+  display: flex;
+  flex-flow: column nowrap;
+
+  text-align: center;
+
+  background-color: #00A3DD;
+}
+
+@media all and (width > 878px) {
+  .mission-block {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    align-items: flex-start;
+  }
+
+  .mission-text {
+    flex-basis: 50%;
+    padding: 1em 0 0 0;
+  }
+
+  .mission-block h2 {
+    padding: 0 12% 0 12%;
+  }
+
+  .mission-block p {
+    display: block;
+    padding: 0 6% 0 6%;
+  }
+
+  .mission-text img {
+    flex-basis: 50%;
+  }
+
+  .strategy-block {
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+
+  .strategy-block img {
+    display: block;
+  }
+
+  .founders-block .founder-cards {
+    flex-flow: row nowrap;
+  }
 }
 
 .initiatives-content {
@@ -173,6 +275,7 @@ body img {
 
 .initiative-block img {
   order: 2;
+  align-self: flex-start;
   max-width: 40%;
   min-width: 300px;
 
@@ -181,11 +284,46 @@ body img {
   margin-bottom: 1em;
 }
 
+.initiative-block .hidden-text {
+  display: none;
+}
+
+.initiative-block .show-more {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+
+.initiative-block .show-more:hover {
+  color: purple;
+}
+
+.initiative-block .show-less {
+  display: none;
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+
+.initiative-block .show-less:hover {
+  color: purple;
+}
+
+.initiative-block .ellipses {
+  display: inline;
+  
+}
+
+.donation {
+  color: blue;
+  display: block;
+}
+
 .team-content h2 {
   text-align: center;
 }
 
-@media all and (width >= 760px) {
+@media all and (width >= 878px) {
   .initiative-block {
     justify-content: space-between;
     align-content: stretch;
@@ -218,6 +356,8 @@ body img {
 .team-frame img{
   border-radius: 8px 8px 0 0;
   border-bottom: 2px solid lightgrey;
+
+  min-width: 100%;
 }
 
 .team-frame h3 {
@@ -226,6 +366,14 @@ body img {
 
 .team-frame h4 {
   padding: 0 0 0 10%;
+}
+
+.contact-content {
+  padding: 0 1em 0 1em;
+}
+
+.involvement-content {
+  padding: 0 1em 0 1em;
 }
 
 #footer {
