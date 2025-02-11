@@ -110,6 +110,12 @@ body img {
 
   .nav-links a {
     padding: 0 .5em 0 .5em;
+    border: none;
+    background-color: white;
+  }
+
+  .nav-links a:hover {
+    color: grey;
   }
 
   .navbar .menu-icon {
@@ -133,11 +139,12 @@ body img {
 .mission-block p {
   display: none;
   flex-basis: 1;
+  margin: 0 1em 0 1em;
 }
 
 .mission-block img {
-  max-width: 500px;
-  min-width: 300px;
+  /* max-width: 500px; */
+  /* min-width: 300px; */
   box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.2);
 
   align-self: center;
@@ -148,7 +155,7 @@ body img {
 }
 
 .mission-text {
-  flex-basis: 2;
+  
 }
 
 .strategy-block {
@@ -167,7 +174,7 @@ body img {
   min-width: 300px;
 }
 
-.founders-block {
+.founder-block {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -175,29 +182,35 @@ body img {
   padding: 0 1em 0 1em;
 }
 
-.founders-block h2 {
+.founder-block h2 {
   text-align: center;
 }
 
-.founders-block .founder-cards {
+.founder-block .founder-cards {
   display: flex;
   flex-flow: column nowrap;
   gap: 2em;
 }
 
-.founders-block .founder-card{
+.founder-block .founder-card{
   display: flex;
   flex-flow: column nowrap;
 
   border: 2px solid lightgrey;
   border-radius: 10px;
+  max-width: 300px;
 
   background-color: white;
 }
 
-.founders-block .founder-card img {
+.founder-block .founder-card img {
   max-width: 300px;
   border-radius: 8px 8px 0 0;
+}
+
+.meet-us-link {
+  align-self: center;
+  text-align: center;
 }
 
 .outreach-block {
@@ -230,11 +243,11 @@ body img {
     padding: 0 6% 0 6%;
   }
 
-  .mission-text img {
+  .mission-block img {
     flex-basis: 50%;
     border: 2px solid lightgrey;
     border-radius: 10px;
-    
+    max-width: 500px;
   }
 
   .strategy-block {
@@ -246,8 +259,11 @@ body img {
     display: block;
   }
 
-  .founders-block .founder-cards {
+  .founder-block {
+    display: flex;
     flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
   }
 }
 
