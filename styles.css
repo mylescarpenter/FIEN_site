@@ -88,7 +88,7 @@ body img {
   font-size: 1.5em;
 }
 
-@media all and (width > 878px) {
+@media all and (width > 991px) {
 
   body img {
     max-width: 75%;
@@ -117,7 +117,11 @@ body img {
   }
 }
 
-.mission-block{
+.main-content {
+  background-color: #e8e8e8;
+}
+
+.mission-block {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
@@ -128,13 +132,23 @@ body img {
 
 .mission-block p {
   display: none;
+  flex-basis: 1;
 }
 
 .mission-block img {
+  max-width: 500px;
   min-width: 300px;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.2);
 
   align-self: center;
+  flex-basis: 1;
+
+  border: none;
+  margin: 2em;
+}
+
+.mission-text {
+  flex-basis: 2;
 }
 
 .strategy-block {
@@ -144,7 +158,6 @@ body img {
   gap: 2em;
 
   padding: 0 1em 0 1em;
-  background-color: #1EB53A;
 }
 
 .strategy-block img {
@@ -160,7 +173,6 @@ body img {
   align-items: center;
   gap: 1em;
   padding: 0 1em 0 1em;
-  background-color: #FCD116;
 }
 
 .founders-block h2 {
@@ -193,21 +205,20 @@ body img {
   flex-flow: column nowrap;
 
   text-align: center;
-
-  background-color: #00A3DD;
 }
 
-@media all and (width > 878px) {
+@media all and (width > 991px) {
   .mission-block {
     flex-flow: row nowrap;
     justify-content: space-between;
 
-    align-items: flex-start;
+    
   }
 
   .mission-text {
     flex-basis: 50%;
     padding: 1em 0 0 0;
+    
   }
 
   .mission-block h2 {
@@ -221,6 +232,9 @@ body img {
 
   .mission-text img {
     flex-basis: 50%;
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+    
   }
 
   .strategy-block {
@@ -237,7 +251,7 @@ body img {
   }
 }
 
-.initiatives-content {
+.programs-content {
   grid-row: 2;
 
   display: grid;
@@ -248,12 +262,12 @@ body img {
   gap: 1em;
 }
 
-.initiatives-content h1{
+.programs-content h1{
   padding: 0 .5em 0 .5em;
   text-align: center;
 }
 
-.initiative-block {
+.programs-block {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -266,14 +280,14 @@ body img {
   box-shadow: 2px 4px 5px 2px rgba(0, 0, 0, 0.05);
 }
 
-.initiative-block div {
+.programs-block div {
   margin: 0 1em 0 1em;
   order: 1;
   max-width: 40%;
   min-width: 300px;
 }
 
-.initiative-block img {
+.programs-block img {
   order: 2;
   align-self: flex-start;
   max-width: 40%;
@@ -284,32 +298,32 @@ body img {
   margin-bottom: 1em;
 }
 
-.initiative-block .hidden-text {
+.programs-block .hidden-text {
   display: none;
 }
 
-.initiative-block .show-more {
+.programs-block .show-more {
   text-decoration: underline;
   color: blue;
   cursor: pointer;
 }
 
-.initiative-block .show-more:hover {
+.programs-block .show-more:hover {
   color: purple;
 }
 
-.initiative-block .show-less {
+.programs-block .show-less {
   display: none;
   text-decoration: underline;
   color: blue;
   cursor: pointer;
 }
 
-.initiative-block .show-less:hover {
+.programs-block .show-less:hover {
   color: purple;
 }
 
-.initiative-block .ellipses {
+.programs-block .ellipses {
   display: inline;
   
 }
@@ -323,13 +337,13 @@ body img {
   text-align: center;
 }
 
-@media all and (width >= 878px) {
-  .initiative-block {
+@media all and (width >= 991px) {
+  .programs-block {
     justify-content: space-between;
     align-content: stretch;
   }
 
-  .initiative-block img {
+  .programs-block img {
     border-radius: 0 9px 9px 0;
     margin: 0;
   }
