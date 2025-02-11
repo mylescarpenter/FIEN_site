@@ -1,4 +1,4 @@
-var more = document.querySelectorAll(".initiative-block .show-more");
+var more = document.querySelectorAll(".programs-block .show-more");
 var less = document.querySelectorAll(".show-less");
 var hidden =  document.querySelectorAll(".hidden-text");
 var ellipses = document.querySelectorAll(".ellipses")
