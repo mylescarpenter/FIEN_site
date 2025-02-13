@@ -288,7 +288,6 @@ body img {
   .mission-text {
     flex-basis: 50%;
     padding: 1em 0 0 0;
-    
   }
 
   .mission-block h2 {
@@ -475,18 +474,123 @@ body img {
 .contact-content {
   padding: 0 1em 0 1em;
   background-color: #f0f0f0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-form {
+  margin: 2em;
+  padding: 1em;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.contact-form input {
+  margin-right: 1em;
+}
+
+.contact-msg-body {
+  min-width: 70%;
+  resize: vertical;
+}
+
+@media screen and (width < 850px) {
+  .contact-content {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .contact-form {
+    margin-top: 1em;
+  }
 }
 
 .involvement-content {
   padding: 0 1em 0 1em;
   background-color: #f0f0f0;
+
+  display: grid;
+  grid-template-columns: 5fr 2fr;
 }
 
-.involvement-content p {
-  padding: 0 0 0 1em;
+.involvement-col1 {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.involvement-col2 {
+  display: grid;
+
+  gap: 0;
+}
+
+.internship-roles {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 2em 0 1em;
+}
+
+.donation-block {
+  background-color: white;
+  border-radius: 10px;
+
+  margin: 1em;
+  padding: 0 1em 1em 1em;
+  max-height: 28em;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.donation-block > h3 {
+  align-self: flex-start;
+}
+
+.donation-block > img {
+  border-radius: 10px 10px 10px 10px;
 }
 
 
+/* 
+.img-intern1-block {
+  border-radius: 10px;
+  background-color: white;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  padding: 1em;
+  margin: 1em;
+} */
+
+.intern-photos {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5em;
+
+  border-radius: 10px;
+  background-color: white;
+
+  margin: 1em;
+  padding: 1em 0 1em 0;
+}
+
+.intern-photos img{
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+@media screen and (width < 807px) {
+  .involvement-content {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+}
 
 .footer {
   display: flex;
@@ -497,3 +601,6 @@ body img {
   margin: 2em;
 }
 
+.footer-social-link {
+  text-decoration: none;
+}
