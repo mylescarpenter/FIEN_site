@@ -22,7 +22,7 @@
       </div>
     </div>
     <div class="nav-links">
-      <a href="./index">Home</a>
+      <a href="./index.html">Home</a>
       <a href="./programs.html">Our Programs</a>
       <a href="./team.html">Our Team</a>
       <a href="./contact.html">Contact Us</a>
@@ -42,18 +42,18 @@
       <form action="https://api.web3forms.com/submit" method="POST">
 
         <input type="hidden" name="access_key" value="fa9369b5-6576-4d04-aeff-64e406cac597">
-
-        <label>Name:</label>
-        <input type="text" name="name" required>
-        <label>Email:</label>
-        <input type="email" name="email" required>
-        <br>
-        <br>
+        <div class="contact-form-name">
+          <label>Name:</label>
+          <input type="text" name="name" required>
+        </div>
+        <div class="contact-form-email">
+          <label>Email:</label>
+          <input type="email" name="email" required>
+        </div>
         <textarea name="message" class="contact-msg-body" required placeholder="Enter your message here:"></textarea>
-        <br>
         <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
         <br>
-        <button action="submit">Send</button>
+        <button action="submit" class="contact-form-send">Send</button>
       </form>
     </div>
   </div>
