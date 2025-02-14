@@ -692,4 +692,14 @@ body img {
     /* margin: 0 1em 0 1em;  */
     max-width: 80%;
   }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: .5em;
+
+    margin-right: .5em;
+    margin-left: .5em;
+  }
 }
