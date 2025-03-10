@@ -643,6 +643,8 @@ body img {
 
   .founder-text p {
     display: block;
+
+    margin-right: 2em;
   }
 
   .founder-bio-mobile {
