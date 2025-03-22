@@ -421,9 +421,15 @@ body img {
   grid-template-columns: 5fr 2fr;
 }
 
+.role-text ol li {
+  padding-bottom: .5em;
+}
+
 .involvement-col1 {
   display: flex;
   flex-flow: column nowrap;
+
+  grid-row: 1 / span 2;
 }
 
 .involvement-col2 {
